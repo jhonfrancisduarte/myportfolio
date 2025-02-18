@@ -7,7 +7,9 @@ body {
     margin: 0;
 }
 
-
+.mobile-menu-btn{
+    display: none;
+}
 
 
 .test {
@@ -34,6 +36,9 @@ body {
     }
 }
 
+.mobile-menu{
+    display: none;
+}
 
 .site-title{
     font-weight: bold;
@@ -54,7 +59,7 @@ body {
     justify-content: space-between;
     align-items: center;
     background: rgb(255, 255, 255);
-    z-index: 9999;
+    z-index: 9998;
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.137);
 }
 
@@ -72,17 +77,18 @@ body {
 
 .hero-container{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     padding: 50px 100px;
 }
 
 .hero-left{
-    width: 40%;
+    flex-grow: 1;
     position: relative;
 }
 
 .hero-right{
-    width: 60%;
+    flex-grow: 1;
 }
 
 .small-logo{

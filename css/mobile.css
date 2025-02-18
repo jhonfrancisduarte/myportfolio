@@ -1,0 +1,55 @@
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+    
+    .hero-container{
+        padding: 50px 20px;
+        width: 100%;
+    }
+
+    .hero-left{
+        width: 100%;
+    }
+
+    .hero-left .me-hero{
+        width: 300px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+    .mobile-menu-btn{
+        display: flex;
+    }
+
+    .header{
+        padding: 5px 20px;
+    }
+
+    .mobile-menu-btn img{
+        width: 50px;
+    }
+
+    .mobile-menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: gray;
+        width: 300px;
+        height: 100%;
+        z-index: 9999;
+        display: none;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 30px;
+        gap: 10;
+        transition: all ease-in-out;
+    }
+
+    .mobile-menu.active{
+        display: flex;
+    }
+}
